@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>E-Commerce with Multiple Products + Factorial Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Products Grid -->
+    <section class="products-grid" id="productsGrid">
+      <!-- Products will be inserted here by JS -->
+    </section>
+
+    <!-- Factorial Calculator Section -->
+    <section class="factorial">
+      <h2>Factorial Calculator</h2>
+      <form class="calc-form" id="factorialForm">
+        <input
+          type="number"
+          id="numberInput"
+          placeholder="Enter a positive integer"
+          min="0"
+          required
+        />
+        <select id="methodSelect">
+          <option value="iterative">Iterative</option>
+          <option value="recursive">Recursive</option>
+        </select>
+        <button type="submit">Calculate</button>
+        <div class="output" id="output"></div>
+      </form>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
